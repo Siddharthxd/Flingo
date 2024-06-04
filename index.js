@@ -7,7 +7,9 @@ const client = new Flingo()
 const GiveawayManager = require("./handler/GiveawayManager");
 
 client.giveawaysManager = new GiveawayManager(client);
-
+client.emoji = {
+    'giveaway': '<a:giveaway2:1027531088135991337>'
+  };
 
 this.config = require(`${process.cwd()}/config.json`);
 (async () => {
